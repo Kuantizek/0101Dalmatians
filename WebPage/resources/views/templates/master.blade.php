@@ -10,8 +10,9 @@
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"> </script>
     <script src="{{ asset('js/popper.min.js') }}"> </script>
     <script src="{{ asset('js/bootstrap.min.js') }}"> </script>
+    <script src="{{ asset('js/Chart.min.js') }}"></script>
 </head>
-<body style="padding-top: 70px">
+<body style="padding-top: 70px; background-color: darkseagreen">
     <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
         <a class="navbar-brand" href="{{$url=route('index')}}"><img src="{{ asset('img/logo.jpg') }}" width= "50px"></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -32,5 +33,6 @@
     <div class="container">
         @yield('contenidor')
     </div>
+    <script src="{{ asset('js/myJS/index.js') }}"></script>
 </body>
 </html>
